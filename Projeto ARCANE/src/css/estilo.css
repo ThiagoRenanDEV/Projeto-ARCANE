@@ -1,0 +1,112 @@
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(92deg, #000 25%, rgba(0, 0, 0, 0) 75%) no-repeat;
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0%;
+    left: 120px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    color: #ffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: #ffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;
+
+
+
+}
+
+.botoes {
+    background-color: #00000042;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.botoes .botao {
+    border: none;
+    background-color: #020202;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.botoes .botao.Jinx.selecionado {
+    box-shadow: 0 0 10px #015c63;
+}
+
+.botoes .botao.VI.selecionado {
+    box-shadow: 0 0 10px #810362;
+}
+
+.botoes .botao.Ekko.selecionado {
+    box-shadow: 0 0 10px #0050c9;
+}
+
+.botoes .botao.Warwick.selecionado {
+    box-shadow: 0 0 10px #239201;
+}
