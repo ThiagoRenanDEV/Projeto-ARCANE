@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCANE PROJECT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Secular+One&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/estilo.css">
+        <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <main class="personagens">
+        <div class="personagem selecionado">
+            <picture>
+                <source srcset="./src/Imagens/jinx-wallpaper.png.jpg" media="(min-width: 768px)">
+                <img class="imagem" src="./src/Imagens/jinx-wallpaper.png.jpg" alt="Personagem Jinx">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Jinx</h2>
+                <p class="descricao">conhecida por sua personalidade caótica e amor pela destruição. Sua história a
+                    apresenta como uma criminosa insana de Zaun, obcecada por causar o caos em Piltover.</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <picture>
+                <source srcset="./src/Imagens/vi wallpaper.png.jpg" media="(min-width: 768px)">
+                <img class="imagem" src="./src/Imagens/vi wallpaper.png.jpg" alt="Personagem VI">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">VI</h2>
+                <p class="descricao">conhecida por sua força bruta e personalidade determinada. Ela é uma xerife de
+                    Piltover que utiliza seus Punhos Hextec para manter a ordem na cidade.</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <picture>
+                <source srcset="./src/Imagens/Ekko wallpaper.png.jpg" media="(min-width: 768px)">
+                <img class="imagem" src="./src/Imagens/Ekko wallpaper.png.jpg" alt="Personagem Ekko">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Ekko</h2>
+                <p class="descricao">é um jovem gênio de Zaun que descobriu como manipular o tempo. Ele criou o
+                    Dispositivo Z-Drive, que lhe permite voltar alguns segundos no passado, corrigindo erros e escapando
+                    de situações perigosas</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <picture>
+                <source srcset="./src/Imagens/warwick.png" media="(min-width: 768px)">
+                <img class="imagem" src="./src/Imagens/warwick.png" alt="Personagem Warwick">
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Warwick</h2>
+                <p class="descricao">é um monstro sedento por sangue que vaga por Zaun. Antes de se tornar a fera que é
+                    hoje, ele era um homem conhecido como Vander ou um criminoso qualquer, capturado pelo cientista
+                    Singed. Em seus experimentos cruéis, Singed transformou Warwick em uma fera híbrida entre homem e
+                    lobo, implantando mecanismos que amplificam sua sede por sangue e dor.</p>
+            </div>
+        </div>
+    </main>
+    <ul class="botoes">
+        <li>
+            <button class="botao Jinx selecionado">
+                <img src="./src/Imagens/Rosto Jinx.jpg" alt="Icone Jinx">
+            </button>
+        </li>
+        <li>
+            <button class="botao VI">
+                <img src="./src/Imagens/Rosto Vi.jpg" alt="Icone VI">
+            </button>
+        </li>
+        <li>
+            <button class="botao Ekko">
+                <img src="./src/Imagens/Rosto Ekko.jpg" alt="Icone Ekko">
+            </button>
+        </li>
+        <li>
+            <button class="botao Warwick">
+                <img src="./src/Imagens/WW.png" alt="Icone Warwick">
+            </button>
+        </li>
+    </ul>
+
+    <script src="./src/JS/index.js"></script>
+</body>
+
+</html>
